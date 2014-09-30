@@ -2,12 +2,13 @@
 <!DOCTYPE>
 <html>
     <head>
-        
+
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Insert title here</title>
         <style>
             body {
                 background-color: #FAFAFA;
+                font-family: Arial;
             }
 
             form {
@@ -17,6 +18,11 @@
             table {
                 width:800px;
                 height:90%;
+                margin-left: 0px;padding:0px;
+            }
+            table.b {
+                width:300px;
+                height:10%;
                 margin-left: 0px;padding:0px;
             }
             td.a {
@@ -35,7 +41,19 @@
                 font-weight:bold;
                 color:#000000;
             }
-            td {
+            td.b {
+
+                background-color:#eeeeee;
+                border:1px none;
+                border-width:0px 1px 1px 0px;
+                text-align:left;
+                padding:7px;
+                font-size:12px;
+                font-family:Arial;
+                font-weight:bold;
+                color:#000000;
+            }
+            td.c {
                 background:-o-linear-gradient(bottom, #D6D6C1 5%, #FFFFFF 100%);	
                 background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #D6D6C1), color-stop(1, #FFFFFF ) ); 
                 background:-moz-linear-gradient( center top, #D6D6C1 5%, #FFFFFF 100% );
@@ -57,37 +75,48 @@
                 height:1000px;
                 width:400px;
                 float:left;
-                padding:5px;
+                padding-left:10px;
             }
             #right {
                 width:0px;
                 float:left;
                 padding:10px;
             }
-
+            h3 {
+                text-align: center;
+            }
 
         </style>
     </head>
     <body>
         <div id="left">
+            <h3>Nowa pozycja</h3>
             <form:form modelAttribute="towar">
-                Nazwa:     <form:input path="nazwa" />
-                <br>
-                Opis:      <form:input path="opis" />
-                <br>
-                Cena:      <form:input path="cena" />
-                <br>
-                Ilosc:     <form:input path="ilosc" />
-                <br>
-                Kategoria: <form:input path="kategoria" />
-                <br>
+                <table class="b">
+                    <tr class="b">
+                        <td class="b">Nazwa:</td>     <td class="b"><form:input path="nazwa" /></td>
+                    </tr>
+                    <tr class="b">
+                        <td class="b">Opis:</td>      <td class="b"><form:input path="opis" /></td>
+                    </tr>
+                    <tr class="b">
+                        <td class="b">Cena:</td>      <td class="b"><form:input path="cena" /></td>
+                    </tr class="b">
+                    <tr class="b">
+                        <td class="b">Ilosc:</td>     <td class="b"><form:input path="ilosc" /></td>
+                    </tr>
+                    <tr class="b">
+                        <td class="b">Kategoria:</td> <td class="b"><form:input path="kategoria" /></td>
+                    </tr>
+                    <br>
+                </table>
                 <input type="submit" value="Dodaj" formaction="magazyn"
                        formmethod="post" />
 
 
 
             </form:form>
-                <br> <br>
+            <br> <br>
             <form action="magazyn" method="get">
                 <input type="text" value=".*" name="wyrazenie" ><br> 
                 <select name="kategoria">
@@ -113,14 +142,14 @@
                 </tr>
                 <c:forEach var="towar" items="${magazyn}">
                     <tr>
-                        <td><c:out value="${towar.id + 1}" /></td>
-                        <td><c:out value="${towar.nazwa}" /></td>
-                        <td><c:out value="${towar.opis}" /></td>
-                        <td><c:out value="${towar.cena}" /></td>
-                        <td><c:out value="${towar.ilosc}" /></td>
-                        <td><c:out value="${towar.kategoria}" /></td>
-                        <td><a href="magazyn?id=${towar.id}&action=delete">Usu&#324;</a></td>
-                        <td><a href="magazynzmien?id=${towar.id}&action=update">Zmie&#324;</a>
+                        <td class="c"><c:out value="${towar.id + 1}" /></td>
+                        <td class="c"><c:out value="${towar.nazwa}" /></td>
+                        <td class="c"><c:out value="${towar.opis}" /></td>
+                        <td class="c"><c:out value="${towar.cena}" /></td>
+                        <td class="c"><c:out value="${towar.ilosc}" /></td>
+                        <td class="c"><c:out value="${towar.kategoria}" /></td>
+                        <td class="c"><a href="magazyn?id=${towar.id}&action=delete">Usu&#324;</a></td>
+                        <td class="c"><a href="magazynzmien?id=${towar.id}&action=update">Zmie&#324;</a>
                         </td>
                     </tr>
                 </c:forEach>
