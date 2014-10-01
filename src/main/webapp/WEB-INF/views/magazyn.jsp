@@ -47,7 +47,7 @@
                 border:1px none;
                 border-width:0px 1px 1px 0px;
                 text-align:left;
-                padding:7px;
+                padding-left:7px;
                 font-size:12px;
                 font-family:Arial;
                 font-weight:bold;
@@ -80,7 +80,8 @@
             #right {
                 width:0px;
                 float:left;
-                padding:10px;
+                padding-left:10px;
+                padding-top:0px
             }
             h3 {
                 text-align: center;
@@ -90,7 +91,7 @@
     </head>
     <body>
         <div id="left">
-            <h3>Nowa pozycja</h3>
+            <h3>Nowa pozycja magazynowa</h3>
             <form:form modelAttribute="towar">
                 <table class="b">
                     <tr class="b">
