@@ -2,92 +2,12 @@
 <!DOCTYPE>
 <html>
     <head>
-
+        <link href="${pageContext.request.contextPath}/resources/styl-magazyn.css" rel="stylesheet" type="text/css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Insert title here</title>
-        <style>
-            body {
-                background-color: #FAFAFA;
-                font-family: Arial;
-            }
-
-            form {
-                font-family: Arial;
-                margin-left: 10px;padding:0px;    
-            }
-            table {
-                width:800px;
-                height:90%;
-                margin-left: 0px;padding:0px;
-            }
-            table.b {
-                width:300px;
-                height:10%;
-                margin-left: 0px;padding:0px;
-            }
-            td.a {
-                background:-o-linear-gradient(bottom, #56aaff 10%, #82c0ff 100%);	
-                background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #56aaff), color-stop(1, #82c0ff) ); 
-                background:-moz-linear-gradient( center top, #56aaff 10%, #82c0ff 100% );
-                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#56aaff", endColorstr="#82c0ff");	
-                background: -o-linear-gradient(top,#FFFFF,82c0ff);
-                background-color:#56aaff;
-                border:1px solid #000000;
-                border-width:0px 1px 1px 0px;
-                text-align:left;
-                padding:7px;
-                font-size:12px;
-                font-family:Arial;
-                font-weight:bold;
-                color:#000000;
-            }
-            td.b {
-
-                background-color:#eeeeee;
-                border:1px none;
-                border-width:0px 1px 1px 0px;
-                text-align:left;
-                padding-left:7px;
-                font-size:12px;
-                font-family:Arial;
-                font-weight:bold;
-                color:#000000;
-            }
-            td.c {
-                background:-o-linear-gradient(bottom, #D6D6C1 5%, #FFFFFF 100%);	
-                background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #D6D6C1), color-stop(1, #FFFFFF ) ); 
-                background:-moz-linear-gradient( center top, #D6D6C1 5%, #FFFFFF 100% );
-                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#D6D6C1", endColorstr="#FFFFFF");	
-                background: -o-linear-gradient(top,#FFFFF,82c0ff);
-                background-color:#56aaff;
-                border:1px solid #000000;
-                border-width:0px 1px 1px 0px;
-                text-align:left;
-                padding:7px;
-                font-size:12px;
-                font-family:Arial;
-                font-weight:bold;
-                color:#000000;
-            }
-            #left {
-                line-height:50px;
-                background-color:#eeeeee;
-                height:1000px;
-                width:400px;
-                float:left;
-                padding-left:10px;
-            }
-            #right {
-                width:0px;
-                float:left;
-                padding-left:10px;
-                padding-top:0px
-            }
-            h3 {
-                text-align: center;
-            }
-
-        </style>
+        <!--    <style>
+                    
+                </style>-->
     </head>
     <body>
         <div id="left">
@@ -102,17 +22,22 @@
                     </tr>
                     <tr class="b">
                         <td class="b">Cena:</td>      <td class="b"><form:input path="cena" /></td>
-                    </tr class="b">
+                    </tr>
                     <tr class="b">
                         <td class="b">Ilosc:</td>     <td class="b"><form:input path="ilosc" /></td>
                     </tr>
                     <tr class="b">
                         <td class="b">Kategoria:</td> <td class="b"><form:input path="kategoria" /></td>
                     </tr>
-                    <br>
+                    <tr class="b">
+                        <td class="b"></td> <td class="b"></td>
+                    </tr>
+                    <tr class="b">
+                        <td class="b"><input type="submit" value="Dodaj" formaction="magazyn"
+                                             formmethod="post" /></td> <td class="b"></td>
+                    </tr>
                 </table>
-                <input type="submit" value="Dodaj" formaction="magazyn"
-                       formmethod="post" />
+
 
 
 

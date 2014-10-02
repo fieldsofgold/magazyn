@@ -2,14 +2,19 @@ package pl.altkom.magazyn.model;
 
 import java.io.Serializable;
 import java.util.Comparator;
+import javax.validation.constraints.NotNull;
 
 public class Towar implements Serializable, Comparable {
-
+    
     private long id;
+    @NotNull
     private String nazwa;
+    @NotNull
     private String opis;
+    @NotNull
     private double cena;
     private int ilosc;
+    @NotNull
     private String kategoria;
 
     public Towar(long id, String nazwa, String opis, double cena, int ilosc,

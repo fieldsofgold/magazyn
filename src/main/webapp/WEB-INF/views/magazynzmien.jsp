@@ -2,44 +2,12 @@
 <!DOCTYPE>
 <html>
     <head>
+        <link href="${pageContext.request.contextPath}/resources/styl-magazynzmien.css" rel="stylesheet" type="text/css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Insert title here</title>
-        <style>
-            body {
-                font-family: Arial;
-            }
-            #content {
-                margin-left: auto;
-                margin-right: auto;
-                background-color:#eeeeee;
-                height:500px;
-                width:500px;
-                float:none;
-                padding:0px;
-            }
-            table.b {
-                width:300px;
-                height:400px;
-                margin-top: auto;
-                margin-left: auto;
-                margin-right: auto;
-
-            }
-            td.b {
-                border:1px none;
-                border-width:1px 1px 1px 1px;
-                text-align:left;
-                padding-left:0px;
-                font-size:12px;
-                font-family:Arial;
-                font-weight:bold;
-                color:#000000;
-            }
-            h3 {
-                text-align: center;
-                padding-top: 20px;
-            }
-        </style>
+<!--        <style>
+            
+        </style>-->
     </head>
     <body>
         <div id="content">

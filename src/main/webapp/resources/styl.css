@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-10-02, 09:45:09
+    Author     : kursant2
+*/
+
+.nav {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.nav .pull-right {
+    float: right!important;
+}
+.nav .pull-left {
+    float: left!important;
+}
+.nav a {
+    color: #5a5a5a;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.nav li {
+    display: inline;
+}
+
+.jumbotron {
+    background-image:url('https://dl-web.dropbox.com/get/plyta1.jpg?_subject_uid=20104072&w=AADF1CQbULeNl1q2cCj9hzQWJHTYsOCqBc-SfQlJ54rNsw');
+    height: 500px;
+    margin-top: 40px;
+
+}
+
+.container-jumbotron {
+    position: relative;
+    top:100px;
+    
+}
+
+.container-jumbotron h1 {
+    color: #ffffff;
+    font-size: 48px;  
+    font-family: Sans-Serif;
+    font-weight: bold;
+    float: left!important;
+    margin-left: 30px!important;
+}
+.container-jumbotron a {
+    margin-left: 30px;
+    color: chartreuse;
+    text-align: left;
+}
+
+.time{
+    background-color:#efefef;
+    border-bottom:1px solid #dbdbdb;
+}
+
+.time h4 {
+    color:#393c3d;
+    font-size:22px;
+    text-align: right;
+}
+
